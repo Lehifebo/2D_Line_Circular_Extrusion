@@ -19,16 +19,18 @@ Using the transformation menu, the user can use the knobs to rotate the object a
 ### Number of edges selector
 The user can select how many edges the object should have, thus increasing the resolution of the generated object. The program will calculate the angular spacing between nodes by dividing 360 by that number. In this way, the resolution of the object can be modified, with a minimum of 2 edges (resulting in a 2D images/image) and 60 edges (resulting in nodes spaced 6 degrees apart).
 
-![alt text](images/image-2.png)
-*Selector for the number of edges*
+![alt text](images/image-2.png)*Selector for the number of edges*
 
 ![alt text](images/image-5.png "2 edges selected")
+
 *2 edges selected*
 
 ![alt text](images/image-6.png "10 edges selected")
+
 *10 edges selected*
 
 ![alt text](images/image-4.png "60 edges selected")
+
 *60 edges selected*
 
 ### Canvas
@@ -101,4 +103,4 @@ The project can be further improved in many ways, and its practicality can be in
 *2D texture of a pine tree*
 
 ![alt text](images/image-21.png)
-*A spinning top toy *
+*A spinning top toy*
