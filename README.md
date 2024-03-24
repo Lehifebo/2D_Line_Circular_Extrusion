@@ -73,12 +73,16 @@ To figure out the points needed for each triangle, a list of all possible triang
 Finally, the vertex buffer is updated with the new values.
 
 ### Colors
-The polygons can be easily spotted on the object, due to the color difference. The color is calculated per polygon (rectangle), by averaging the normals of its two triangles.
+The polygons can be easily spotted on the object, due to the color difference. The color is calculated per polygon (rectangle), by averaging the normals of its two triangles, how the pattern is emerging, is still unknown.
 
 ![alt text](images/image-17.png)
-Polygon color pattern example*
+*Polygon color pattern example*
 
+![alt text](image-1.png)
+*Green object at the top of the frame*
 
+![alt text](image-2.png)
+*Purple object at the bottom of the frame*
 
 ## Future development
 The project can be further improved in many ways, and its practicality can be increased. Below are the features that can be added:

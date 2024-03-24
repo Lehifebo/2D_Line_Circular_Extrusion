@@ -103,14 +103,14 @@ void MainWindow::on_edges_valueChanged(int value){
     if(stepAllowed.contains(value)){
         ui->mainView->edges = value;
     } else {
-        if(value > previousValue){
+        if(value > previousValue){ //then it was incremented up
             int up = value;
             while(!stepAllowed.contains(up)){
                 up++;
             }
             ui->edges->setValue(up);
             ui->mainView->edges = up;
-        } else {
+        } else { //then it was incremented down
             int down = value;
             while(!stepAllowed.contains(down)){
                 down--;
