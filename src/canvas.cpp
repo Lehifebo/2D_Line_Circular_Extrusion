@@ -25,6 +25,5 @@ void Canvas::paintEvent(QPaintEvent *event) {
  */
 QVector<QPointF> Canvas::getPoints(){
     QVector<QPointF> temp = points;
-    points.clear();
     return temp;
 }

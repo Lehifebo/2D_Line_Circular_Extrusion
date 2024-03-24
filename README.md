@@ -17,7 +17,7 @@ Using the transformation menu, the user can use the knobs to rotate the object a
 ![alt text](images/image-1.png) 
 
 ### Number of edges selector
-The user can select how many edges the object should have, thus increasing the resolution of the generated object. The program will calculate the angular spacing between nodes by dividing 360 by that number. In this way, the resolution of the object can be modified, with a minimum of 2 edges (resulting in a 2D images/image) and 60 edges (resulting in nodes spaced 6 degrees apart).
+The user can select how many edges the object should have, thus increasing the resolution of the generated object. The program will calculate the angular spacing between nodes by dividing 360 by that number. In this way, the resolution of the object can be modified, with a minimum of 2 edges (resulting in a 2D images/image) and 60 edges (resulting in nodes spaced 6 degrees apart). To obtain a smooth and simmetric edge, only divisors of 360 are allowed as number of edges.
 
 ![alt text](images/image-2.png)*Selector for the number of edges*
 
@@ -104,3 +104,6 @@ The project can be further improved in many ways, and its practicality can be in
 
 ![alt text](images/image-21.png)
 *A spinning top toy*
+
+![alt text](image.png)
+*An umbrella*

@@ -59,7 +59,7 @@ void MainView::initializeGL() {
 
 
   projectionTransformation.setToIdentity();
-  projectionTransformation.perspective(60.0f,1.0f,0.0f,200.0f);
+  projectionTransformation.perspective(60.0f,16/9,30.0f,200.0f);
 
   this->rotateX = 0;
   this->rotateY = 0;
@@ -213,8 +213,7 @@ void MainView::updatePoints(QVector<QPointF> &newPoints){
         node.x = mapToRange(point.x(), 0, 300, -1, 1);
         node.y = mapToRange(point.y(), 0, 550, 1, -1);
 
-        float step = 360/edges;
-
+        int step = 360/edges;
         //rotate the point around the Y axis, and add it to the array
         for(float i=0;i<360;i+=step){
             vertex aux  = rotateYAndReturn(node,i);
@@ -226,6 +225,7 @@ void MainView::updatePoints(QVector<QPointF> &newPoints){
     //clear the memory
     newPoints.clear();
     myPoints.clear();
+
     tempSize = temporary.size();
     int lineWidth = edges+1;
 

@@ -20,8 +20,11 @@ class MainWindow : public QMainWindow {
   explicit MainWindow(QWidget *parent = nullptr);
   void renderToFile();
   ~MainWindow() override;
-
+  QVector<int> stepAllowed = {2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 18, 20, 24, 30, 36, 40, 45, 60, 72, 90};
+  int previousValue=2;
+  int stepPreviousValue = 0;
  private slots:
+
   void on_ResetRotationButton_clicked(bool checked);
   void on_RotationDialX_sliderMoved(int value);
   void on_RotationDialY_sliderMoved(int value);

@@ -96,9 +96,32 @@ void MainWindow::on_GenerateButton_clicked(bool clicked){
 }
 
 /**
- * @brief MainWindow::on_edges_valueChanged update the number of edges selected by the user
+ * @brief MainWindow::on_edges_valueChanged update the number of edges selected by the user, making sure its an allowed value
  * @param value
  */
 void MainWindow::on_edges_valueChanged(int value){
-    ui->mainView->edges = value;
+    if(stepAllowed.contains(value)){
+        ui->mainView->edges = value;
+    } else {
+        if(value > previousValue){
+            int up = value;
+            while(!stepAllowed.contains(up)){
+                up++;
+            }
+            ui->edges->setValue(up);
+            ui->mainView->edges = up;
+        } else {
+            int down = value;
+            while(!stepAllowed.contains(down)){
+                down--;
+            }
+            ui->edges->setValue(down);
+            ui->mainView->edges = down;
+        }
+        return;
+
+    }
+    previousValue = value;
+    QVector<QPointF> test = ui->canvas->getPoints();
+    ui->mainView->updatePoints(test);
 }

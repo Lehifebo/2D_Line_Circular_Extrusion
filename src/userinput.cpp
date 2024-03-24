@@ -1,6 +1,7 @@
 #include <QDebug>
 
 #include "mainview.h"
+#include "mainwindow.h"
 #include "canvas.h"
 
 
