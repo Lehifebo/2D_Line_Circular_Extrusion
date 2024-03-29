@@ -3,12 +3,11 @@
 Andrei Bîgiu
 
 ## Description
-Submission for the famous Computer Graphics Contest. To open the application, please consult the _INSTALL.md_ file
+Winning submission for the [Computer Graphics](https://ocasys.rug.nl/current/catalog/course/WBCS019-05) Contest at the University Of Groningen, 2024 edition. You can see the submission displayed in the [Hall of Fame](https://www.cs.rug.nl/svcg/Teaching/ComputerGraphicsResults) of the contest. 
 
-The application is extruding and revolving a 2D line provided by the user, into a 3D object that can be rotated and scaled.
+The application is extruding and revolving a 2D line provided by the user, into a 3D object that can be rotated and scaled. 
 
-It was built using the user interface provided for OpenGL Lab 1. 
-
+To open and run the application, please consult the _INSTALL.md_ file
 ## Usage
 The user can interact with multiple items of the application:
 ### Transformation menu
@@ -17,7 +16,7 @@ Using the transformation menu, the user can use the knobs to rotate the object a
 ![alt text](images/image-1.png) 
 
 ### Number of edges selector
-The user can select how many edges the object should have, thus increasing the resolution of the generated object. The program will calculate the angular spacing between nodes by dividing 360 by that number. In this way, the resolution of the object can be modified, with a minimum of 2 edges (resulting in a 2D images/image) and 60 edges (resulting in nodes spaced 6 degrees apart). To obtain a smooth and simmetric edge, only divisors of 360 are allowed as number of edges.
+The user can select how many edges the object should have, thus increasing the resolution of the generated object. The program will calculate the angular spacing between nodes by dividing 360 by that number. In this way, the resolution of the object can be modified, with a minimum of 2 edges (resulting in a 2D images/image) and 60 edges (resulting in nodes spaced 6 degrees apart). To obtain a smooth and symmetric edge, only divisors of 360 are allowed as number of edges.
 
 ![alt text](images/image-2.png)*Selector for the number of edges*
 
@@ -104,10 +103,10 @@ The project can be further improved in many ways, and its practicality can be in
 *An hourglass*
 
 ![alt text](images/image-18.png)
-*2D texture of a pine tree*
+*A 2D texture of a pine tree*
 
 ![alt text](images/image-21.png)
-*A spinning top toy*
+*A spinning-top toy*
 
 ![alt text](image.png)
 *An umbrella*
